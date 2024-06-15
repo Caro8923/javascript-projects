@@ -1,8 +1,11 @@
 // Now consider both if/else blocks together (keeping the added console.log lines). 
 // Run the code and examine the output. 
 
-// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
+// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false? 
+// launchReady should not be true overall, because not all checks have passed.
+
 // Is the program behaving as expected?
+// No, launchReady is being assigned true even after some checks have failed.
 
 let launchReady = false;
 let fuelLevel = 17000;
