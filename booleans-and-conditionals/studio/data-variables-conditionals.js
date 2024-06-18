@@ -19,7 +19,7 @@ let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
 if (astronautCount > 7) {
-    preparedForLiftoff = false;
+    preparedForLiftOff = false;
     console.log("Security Alert! Kick off " + (astronautCount - 7) + " astronauts to launch!");
 }
 
