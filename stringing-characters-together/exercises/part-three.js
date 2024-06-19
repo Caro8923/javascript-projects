@@ -29,3 +29,6 @@ let notTitleCase = 'title case';
 
 let realTitleCase = notTitleCase.replace("t","T").replace("c", "C");
 console.log(realTitleCase)
+
+let realTitleCase2 = notTitleCase.toUpperCase().at(0).concat(notTitleCase.slice(1,6)).concat(notTitleCase.toUpperCase().at(6)).concat(notTitleCase.slice(7,10))
+console.log(realTitleCase2)
