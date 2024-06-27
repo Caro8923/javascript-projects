@@ -76,14 +76,15 @@ console.log(makeIsoscelesTriangle(5))
 //make diamond
 
 function Diamond(height) {
-    let triangle = ''
-    let reverseTriangle = ''
+    let triangle = '';
+    let reverseTriangle = '';
+    let diamond = '';
     for (let i = 0; i < height; i++) {
-        triangle += (makeSpaceLine(height - i - 1, 2 * i + 1) + '\n')
-        reverseTriangle = triangle.split('\n').reverse().join('');
+        triangle += (makeSpaceLine(height - i - 1, 2 * i + 1) + '\n');
+        reverseTriangle = triangle.split('\n').reverse().join('\n');
     } 
-    return triangle
-    return reverseTriangle
+    diamond = triangle + reverseTriangle.slice(1);
+    return diamond;
 }
 
 console.log(Diamond(5))
