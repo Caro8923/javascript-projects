@@ -19,7 +19,7 @@ function reverseChar(str) {
     return reversed;
 }
 
-str = 1234;
+let str = 1234;
 console.log(reverseChar(str));
 
 
@@ -51,16 +51,19 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
-let newArray = [];
+
 
 function reverseArray(array) {
+    let newArray = [];
     for (i=0; i < array.length; i++) {
-        newArray[i] = reverseChar(array[i]);
+        newArray.push(reverseChar(array[i]));
     }
-    return newArray;
+    return newArray.reverse();
 }
 
-console.log(reverseArray(arrayTest3))
+console.log(reverseArray(arrayTest1));
+console.log(reverseArray(arrayTest2));
+console.log(reverseArray(arrayTest3));
 
 // Bonus Missions
 
@@ -68,6 +71,22 @@ console.log(reverseArray(arrayTest3))
 // 2. Retrieve only the last character from strings with lengths of 3 or less.
 // 3. Retrieve only the first 3 characters from strings with lengths larger than 3.
 // 4. Use a template literal to return the phrase We put the '___' in '___'. Fill the first blank with the modified string, and fill the second blank with the original string.
+
+function funPhrase (phrase) {
+    let truncPhrase = '';
+    if (phrase.length < 4 && phrase.length > 0) {
+        truncPhrase = phrase[phrase.length -1];
+    } else {
+        truncPhrase = phrase.slice(0,3);
+    }
+    return `We put the ${truncPhrase} in ${phrase}.`;
+}
+
+let string = "Functions Rock!";
+console.log(funPhrase(string));
+
+let trial = "Hi";
+console.log(funPhrase(trial));
 
 // Test Function
 
@@ -81,3 +100,11 @@ console.log(reverseArray(arrayTest3))
 // 3. Call your area function by passing in two arguments - the length and width.
 // 4. If only one argument is passed to the function, then the shape is a square. Modify your code to deal with this case.
 // 5. Use a template literal to print, “The area is ____ cm^2.”
+
+function areaOfRectangle(l, w = l) {
+    return l*w
+}
+
+console.log(`The area of this rectangle is ${areaOfRectangle(3,4)}cm^2`);
+console.log(`The are of this square is ${areaOfRectangle(2)}cm^2`);
+
