@@ -58,13 +58,15 @@ console.log(undercoverFunction(fuelLevel))
 
 swag = []
 let hiddenFunction = function(b) {
-  swag = [b.splice(4,1,"pencils"), b.splice(6,1,"paper")];
+  swag = [b.splice(4,1,"pencils")[0],  b.splice(6,1,"paper")[0]];
   return swag;
 }
 
+/* TEST (in comments because affects solution to task below)
 console.log(hiddenFunction(cargoHold));
 console.log(cargoHold);
 console.log(swag);
+*/
 
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
