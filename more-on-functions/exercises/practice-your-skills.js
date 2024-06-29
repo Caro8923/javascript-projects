@@ -50,4 +50,4 @@ let arr = ['Elocution', 21, 'Clean teeth', 100];
 
 let mappedArray = arr.map(anonymous);
 
-console.log(mappedArray)
+console.log(mappedArray);
