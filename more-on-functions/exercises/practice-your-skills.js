@@ -47,7 +47,9 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
-
 let mappedArray = arr.map(anonymous);
-
 console.log(mappedArray);
+
+let arrForFun = ["Henry is", 9, "months old", true];
+let mappedFunArray = arrForFun.map(anonymous);
+console.log(mappedFunArray);
