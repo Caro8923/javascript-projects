@@ -1,4 +1,10 @@
+let ans = ["rock", "paper", "scissors"];
+
 function whoWon(player1,player2){
+
+   if (ans.indexOf(player1) < 0 || ans.indexOf(player2) < 0){
+    return 'Not a valid entry. Try again.';
+   }
 
    if (player1 === player2){
      return 'TIE!';
@@ -12,9 +18,13 @@ function whoWon(player1,player2){
      return 'Player 2 wins!';
    }
    
-   if (player1 === 'scissors' && player2 === 'rock '){
+   if (player1 === 'scissors' && player2 === 'rock'){
      return 'Player 2 wins!';
    }
  
    return 'Player 1 wins!';
  }
+
+
+
+ module.exports = whoWon;  
