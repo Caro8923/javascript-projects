@@ -16,8 +16,11 @@ function init () {
     })
 
     missionAbort.addEventListener('click', event => {
-        //input from readline sync?
-        //if YES the print message
+        let response = window.confirm("Are you sure you want to abort mission?");
+        if (response) {
+            paragraph.innerHTML = "Mission Aborted! Space shuttle returning home.";
+        } 
+       
     })
 }
 
