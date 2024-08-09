@@ -3,17 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
+		function setSearchEngine() {
+			console.log("hello");
+		}
     window.addEventListener("load", function(){
-        // TODO: register the handler
+		let form = document.querySelector("input[name=engine]:checked");
+        form.addEventListener("submit", setSearchEngine(event){})
     });
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
+<form>
+	<label>Search Engine: <input type="text" name="q"/></label>
+		<label>Google<input type="radio" name="engine" value="Google"/></label>
+		<label>DuckDuckGo<input type="radio" name="engine" value="DuckDuckGo"/></label>
+		<label>Bing<input type="radio" name="engine" value="Bing"/></label>
+		<label>Ask<input type="radio" name="engine" value="Ask"/></label>
+		<button action="" value="Go!">Go!</button>
+		<!-- TODO: add form elements -->
 	</form>
 
 </body>
