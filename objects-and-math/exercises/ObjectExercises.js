@@ -70,7 +70,9 @@ console.log(crewArray);
 // Start an animal race!
 
 function fitnessTest(racers) {
-   let results = [], numSteps, turns;
+   let results = [];
+   let numSteps;
+   let turns;
 
    for (let i=0; i < racers.length; i++) {
       numSteps = 0; 
@@ -102,7 +104,7 @@ I created a function to anonomously randomly an astronaut ID
 
 Questions : 
 
-      How to randomly pick a value from an array?
+      How to randomly pick a value from an array?*/
                
 
 let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -122,4 +124,4 @@ Tests
 tardigrade["astronautID"] = assignAstronautID(tardigrade);
 
 console.log(tardigrade.astronautID);
-*/
+
